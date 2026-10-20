@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock, Paper, Scissors</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+    <div class="flex items-center justify-center w-full h-[650px] sm:h-[800px] md:h-[900px] xl:h-[700px] ">
+        <div class="w-[300px] sm:w-[450px] md:w-[500px] sm:h-[570px] border border-2 rounded-xl flex flex-col items-center sm:m-4 p-4 bg-[beige]">
+            <div class="">
+                <h1 id="heading" class="sm:text-4xl text-2xl font-semibold text-[chocolate]">Rock, Paper, Scissors!!!</h1>
+            </div>
+            <div class=" text-center text-xl sm:text-2xl font-semibold m-2">
+                <h2>Wanna Play??</h2>    
+            </div>
+            <div class="mt-4">
+                <h3 class="text-xl font-semibold md:text-2xl">Choose:</h3>
+                <ul class="text-lg md:text-xl">
+                    <li>1.Rock ✊</li>
+                    <li>2.Paper ✋</li>
+                    <li>3.Scissors ✂️</li>
+                </ul>
+            </div>
+            
+            <div class="mt-10 flex flex-col items-center">
+                <form>
+                    <input id="choice" type="text" placeholder="Type the number" class="border border-1 text-center rounded-lg py-2 ">
+                </form>
+                <button onclick="getResult()" id="submit" class="bg-[chocolate] text-white py-2 px-6 my-4  rounded-xl hover:shadow-lg hover:shadow-[chocolate] transition duration-300">Play</button>
+            </div>
+            <div class="mt-6 md:text-lg">
+                <p id="display">You: Nothing  |  Computer: Nothing</p>
+                <p class="text-center py-2 font-bold" id="message">Who won?</p>
+            </div>
+            <button onclick="playAgain()" id="play" disabled class="mt-6 md:mt-4 py-2 px-6 rounded-xl text-lg font-semibold bg-white text-[chocolate] hover:bg-[chocolate] hover:text-white hover:shadow-md transition duration-300 disabled:opacity-50 disabled:cursor-not-allowed">Play Again!!</button>
+            
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
